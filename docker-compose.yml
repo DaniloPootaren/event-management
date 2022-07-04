@@ -14,7 +14,7 @@ services:
     networks:
       - app-network
     ports:
-      - '8080:1337'
+      - '80:1337'
     volumes:
       - /usr/app/node_modules
 

@@ -1,21 +1,3 @@
-# FROM node:12
-
-# WORKDIR /app
-
-# COPY package.json ./
-
-# COPY . .
-
-# ENV NODE_ENV production
-
-# RUN npm config set ca=""
-
-# RUN npm set strict-ssl false
-
-
-# RUN npm install 
-
-# CMD ["yarn", "start"]
 
 FROM strapi/base:alpine
 
