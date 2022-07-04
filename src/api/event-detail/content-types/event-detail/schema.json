@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_details",
+  "info": {
+    "singularName": "event-detail",
+    "pluralName": "event-details",
+    "displayName": "event-detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "location": {
+      "type": "string"
+    },
+    "organizers": {
+      "type": "enumeration",
+      "enum": [
+        "Mauritius event organization",
+        "Caudan event organization ",
+        "Lux Hotel",
+        "Mari Deal "
+      ]
+    },
+    "article": {
+      "type": "richtext"
+    }
+  }
+}
