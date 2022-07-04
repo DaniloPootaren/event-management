@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+
+  cms:
+    build:
+      context: ./
+      dockerfile: 'Dockerfile'
+
+    depends_on:
+      - "db"
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - app-network
+    ports:
+      - '8080:1337'
+    volumes:
+      - /usr/app/node_modules
+
+  db:
+    container_name: cms_db
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: event
+    ports:
+      - '3306:3306'
+    networks:
+      - app-network
+    volumes:
+      - mysql_db:/var/lib/mysql/data
+
+volumes:
+  mysql_db:
+    external: false
+      
+networks:
+  app-network:
+    driver: bridge
