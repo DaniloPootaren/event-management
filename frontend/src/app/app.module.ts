@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuComponent } from './components/menu/menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ToggleButtonsComponent } from './components/toggle-buttons/toggle-buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    ToggleButtonsComponent
   ],
   imports: [
     BrowserModule,

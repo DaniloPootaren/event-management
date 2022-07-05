@@ -1,0 +1,32 @@
+@import '../../../common/styles/colors.scss';
+
+
+.button-Container {
+  width: 10em;
+  height: 2em;
+  border-radius: 5em;
+  overflow: hidden;
+  background-color: $yellow;
+
+  button {
+    outline: none;
+    width: 6em;
+    height: 3em;
+    border: none;
+    background: none;
+    font-size: 12px;
+    color: $white;
+    text-transform: uppercase;
+
+  }
+
+  .border-right {
+    border-right: 0.5px solid $gray;
+    width: 7em;
+  }
+
+}
+
+.alternative-color {
+  background-color: $indigo;
+}
