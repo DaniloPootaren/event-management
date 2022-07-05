@@ -14,7 +14,7 @@ import {
 export class AppComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
-    if (window.pageYOffset > 200) {
+    if (window.pageYOffset > 120) {
       return (this.showAlternativeMenu = true);
     }
     return (this.showAlternativeMenu = false);
