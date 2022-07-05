@@ -1,5 +1,10 @@
 .wrapper {
-    background-color: red;
-    height: 10vh;
-    width: 100%;
+    background-color: transparent;
+    transition: background-color 1s;
+    height: 12vh;
+    width: 100vw;
+}
+
+.alternative {
+    background-color: #fff;
 }
