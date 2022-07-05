@@ -1,0 +1,15 @@
+.app-layout {
+    height: 100vh;
+
+    .menu {
+      height:  10vh;
+    }
+
+    .detached-menu {
+        position: fixed;
+    }
+
+    .body {
+        height: 120vh;
+    }
+}
