@@ -60,6 +60,49 @@
       }
     }
   }
+
+
+  .indigo {
+    position: relative;
+    margin: 0 1.5em;
+
+    .menu-icon {
+      font-size: 10px;
+      margin-left: 5px;
+    }
+
+    .menu-context-container {
+        display: none;
+      }
+
+    &:hover {
+      color: $indigo;
+      cursor: pointer;
+    }
+
+    &:hover .menu-context-container {
+      display: block;
+      position: absolute;
+
+      .content {
+        background-color: #fff;
+        margin-top: 1.5em;
+        min-height: 10em;
+        min-width: 16em;
+        padding: 2em;
+        border-top: 3px solid $yellow;
+        color: black;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin: 5px 0;
+            }
+        }
+      }
+    }
+  }
 }
 
 .alternative {

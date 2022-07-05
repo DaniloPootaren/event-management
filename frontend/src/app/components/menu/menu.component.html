@@ -5,11 +5,11 @@
   <div class="row h-100 mx-0">
     <div class="col-3 aligned">Brand</div>
     <div class="col-9 aligned justify-content-end">
-      <div class="menu-item">
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
         Home
         <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
         <div class="menu-context-container">
-          <div class="content rounded shadow">
+          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
             <ul class="px-0">
               <li>Event 1</li>
               <li>Event 2</li>
@@ -19,11 +19,11 @@
           </div>
         </div>
       </div>
-      <div class="menu-item">
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
         Events
         <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
         <div class="menu-context-container">
-          <div class="content rounded shadow">
+          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
             <ul class="px-0">
               <li>Event 1</li>
               <li>Event 2</li>
@@ -33,11 +33,11 @@
           </div>
         </div>
       </div>
-      <div class="menu-item">
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
         Calendar
         <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
         <div class="menu-context-container">
-          <div class="content rounded shadow">
+          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
             <ul class="px-0">
               <li>Event 1</li>
               <li>Event 2</li>
@@ -47,11 +47,11 @@
           </div>
         </div>
       </div>
-      <div class="menu-item">
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
         Speakers
         <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
         <div class="menu-context-container">
-          <div class="content rounded shadow">
+          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
             <ul class="px-0">
               <li>Event 1</li>
               <li>Event 2</li>
@@ -61,11 +61,11 @@
           </div>
         </div>
       </div>
-      <div class="menu-item">
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
         Venues
         <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
         <div class="menu-context-container">
-          <div class="content rounded shadow">
+          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
             <ul class="px-0">
               <li>Event 1</li>
               <li>Event 2</li>
@@ -75,10 +75,10 @@
           </div>
         </div>
       </div>
-      <div class="menu-item">
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
         <fa-icon [icon]="shoppingCartIcon"></fa-icon>
       </div>
-      <div class="menu-item">
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
         <toggle-buttons [alternative]="alternative"></toggle-buttons>
       </div>
     </div>
