@@ -3,7 +3,7 @@
 .wrapper {
   background-color: transparent;
   transition: background-color 1s;
-  height: 12vh;
+  height: 8vh;
   width: 100vw;
   padding: 0 1em;
   color: #fff;
@@ -20,6 +20,8 @@
 
   @media only screen and (min-width: 992px) {
     padding: 0 8em;
+    height: 12vh;
+
   }
 
   h4 {
