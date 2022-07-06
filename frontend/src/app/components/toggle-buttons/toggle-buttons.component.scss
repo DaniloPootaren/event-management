@@ -29,3 +29,22 @@
 .alternative-color {
   background-color: $indigo;
 }
+
+.fullWidth {
+  width: 80%;
+  height: 3em;
+  margin: 1em;
+  border-radius: 5px;
+
+  button {
+    outline: none;
+    border: none;
+    background: none;
+    padding-top: 1em;
+    width: 50%;
+    font-size: 13px !important;
+    color: white;
+    text-transform: uppercase;
+
+  }
+}

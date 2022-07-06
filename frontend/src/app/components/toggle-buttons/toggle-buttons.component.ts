@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ToggleButtonsComponent implements OnInit {
 
   @Input() alternative: boolean = false;
+  @Input() fullWidth: boolean = false;
 
   constructor() { }
 
