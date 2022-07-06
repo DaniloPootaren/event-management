@@ -11,6 +11,13 @@
   font-size: 14px;
   font-weight: bold;
 
+  .mobile-navigator {
+    font-size: 30px;
+    font-weight: normal;
+    color: $gray;
+  }
+
+
   @media only screen and (min-width: 992px) {
     padding: 0 8em;
   }
@@ -18,7 +25,12 @@
   h4 {
     margin-top: 10px;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 23px;
+
+
+    @media only screen and (min-width: 992px) {
+      font-size: 26px;
+    }
   }
 
   .aligned {
@@ -124,7 +136,6 @@
               color: $indigo;
             }
           }
-
         }
       }
     }
