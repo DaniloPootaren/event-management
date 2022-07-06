@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_menus",
+  "info": {
+    "displayName": "menu",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-item.menu-item"
+    }
+  }
+}

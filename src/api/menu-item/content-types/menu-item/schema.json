@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "menu-item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "submenu": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
