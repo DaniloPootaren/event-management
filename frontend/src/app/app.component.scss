@@ -1,5 +1,7 @@
 .app-layout {
     height: 100vh;
+    transition: margin-left 10s;
+
 
     .menu {
       height:  12vh;
@@ -8,6 +10,7 @@
 
 
     .body {
-        height: 120vh;
+        height: 120vh;        
     }
 }
+

@@ -82,8 +82,15 @@
         <toggle-buttons [alternative]="alternative"></toggle-buttons>
       </div>
     </div>
-    <div class="col-9 aligned justify-content-end d-lg-none mobile-navigator">
+    <div class="col-9 aligned justify-content-end d-lg-none mobile-navigator" (click)="openNav(sideNav, overlay)">
       &#9776;
     </div>
   </div>
 </div>
+<div id="mySidenav" class="sidenav" #sideNav>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<div id="overlay" #overlay (click)="closeNav(sideNav,overlay)"></div>
