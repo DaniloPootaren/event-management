@@ -69,6 +69,10 @@
             font-weight: normal;
             font-size: 12px;
             text-transform: capitalize;
+
+            &:hover {
+              color: $yellow;
+            }
           }
         }
       }
@@ -115,7 +119,12 @@
             align-items: center;
             border-bottom: 0.5px solid $gray;
             height: 4em;
+
+            &:hover {
+              color: $indigo;
+            }
           }
+
         }
       }
     }
