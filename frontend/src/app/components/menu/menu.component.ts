@@ -19,7 +19,7 @@ export class MenuComponent implements OnInit {
   }
 
   openNav(sideNav: any, overlay:any) {
-    sideNav.style.width = '450px';
+    sideNav.style.width = '500px';
     overlay.style.display = 'block';
     this.main.style.backgroundColor = 'black';
   }
