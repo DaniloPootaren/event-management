@@ -18,7 +18,7 @@ export class SidenavComponent implements OnInit {
     {
       name: 'Home',
       link: '/home',
-      subLinks: [{ name: 'Link 1', link: '/link1' }],
+      subLinks: [{ name: 'Link 1', link: '/link1' }, { name: 'Link 2', link: '/link2' }],
     },
     {
       name: 'Events',
@@ -60,7 +60,6 @@ export class SidenavComponent implements OnInit {
   }
 
   onChevronDown(subcontent: any) {
-    
     if (subcontent.style.display === 'block') {
       subcontent.style.display = 'none';
       subcontent.style.height = '0px';
@@ -68,5 +67,11 @@ export class SidenavComponent implements OnInit {
       subcontent.style.display = 'block';
       subcontent.style.minHeight = '100px';
     }
+  }
+
+  onFocusOut(subcontent: any){
+    alert('out')
+    subcontent.style.display = 'none';
+    subcontent.style.height = '0px';
   }
 }

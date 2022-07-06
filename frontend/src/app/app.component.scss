@@ -4,8 +4,12 @@
 
 
     .menu {
-      height:  12vh;
+      height:  8vh;
       position: fixed;
+
+      @media only screen and (min-width: 992px) {
+        height: 12vh;
+      }
     }
 
 

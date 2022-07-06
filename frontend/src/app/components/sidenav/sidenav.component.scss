@@ -2,6 +2,12 @@
 
 .container {
   padding: 0 2em;
+  height: 72%;
+  overflow-y: auto;
+
+  .row {
+    height: 100%;
+  }
 
   h4 {
     margin-top: 10px;
@@ -23,10 +29,6 @@
     text-transform: uppercase;
     cursor: pointer;
 
-    &:hover {
-      color: $yellow;
-    }
-
     .chevron-down {
       cursor: pointer;
     }
@@ -34,5 +36,19 @@
 
   .sub-content {
     display: none;
+    position: relative;
+
+    .sub-link {
+      &:hover {
+        color: $yellow;
+      }
+    }
   }
+
+}
+
+.footer {
+  background-color: black;
+  height: 15em;
+
 }

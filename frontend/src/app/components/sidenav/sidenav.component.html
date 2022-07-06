@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 d-flex justify-content-between align-items-center">
+    <div class="col-12 d-flex justify-content-between align-items-center py-5">
       <h4>EVENTCHAMP</h4>
       <fa-icon
         [icon]="closeIcon"
@@ -8,12 +8,25 @@
         (click)="onClose()"
       ></fa-icon>
     </div>
-    <div class="col-12 menu-item" *ngFor="let menu of menus">
-      <div class="d-flex align-items-center justify-content-between">
+    <div class="col-12 menu-item" *ngFor="let menu of menus" >
+      <div class="d-flex align-items-center justify-content-between" (blur)="onFocusOut(content)">
         {{ menu.name }}
         <fa-icon [icon]="chevronIcon" class="chevron-down" (click)="onChevronDown(content)"></fa-icon>
       </div>
-      <div class="sub-content" #content>sub-content</div>
+      <div class="sub-content py-3" #content id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12" *ngFor="let submenu of menu.subLinks">
+              <div class="sub-link">
+                {{submenu.name}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+<div class="footer">
+  this the footer
 </div>
