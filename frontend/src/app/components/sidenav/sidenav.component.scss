@@ -1,31 +1,38 @@
-@import '../../../common/styles/colors.scss';
+@import "../../../common/styles/colors.scss";
 
 .container {
-    padding: 0 2em;
+  padding: 0 2em;
 
-    h4 {
-        margin-top: 10px;
-        font-weight: 900;
-        font-size: 26px;
-    
-      }
+  h4 {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 26px;
+  }
 
-      .close-btn {
-        font-size: 25px;
-        color: $gray;
-        cursor: pointer;
-      }
+  .close-btn {
+    font-size: 25px;
+    color: $gray;
+    cursor: pointer;
+  }
 
-      .menu-item {
-        height: 4em;
-        border-bottom: 0.5px solid $light-gray;
-        font-weight: 500;
-        font-size: 13px;
-        text-transform: uppercase;
-        cursor: pointer;
+  .menu-item {
+    min-height: 4em;
+    border-bottom: 0.5px solid $light-gray;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
 
-        &:hover {
-        color: $yellow;
-        }
-      }
+    &:hover {
+      color: $yellow;
+    }
+
+    .chevron-down {
+      cursor: pointer;
+    }
+  }
+
+  .sub-content {
+    display: none;
+  }
 }

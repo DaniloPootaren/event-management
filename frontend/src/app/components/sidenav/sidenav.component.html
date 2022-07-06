@@ -2,11 +2,18 @@
   <div class="row">
     <div class="col-12 d-flex justify-content-between align-items-center">
       <h4>EVENTCHAMP</h4>
-      <fa-icon [icon]="closeIcon" class="close-btn" (click)="onClose()"></fa-icon>
+      <fa-icon
+        [icon]="closeIcon"
+        class="close-btn"
+        (click)="onClose()"
+      ></fa-icon>
     </div>
-    <div class="col-12 menu-item d-flex align-items-center justify-content-between" *ngFor="let menu of menus">
-      {{menu.name}}
-      <fa-icon [icon]="chevronIcon" class="chevron-down"></fa-icon>
+    <div class="col-12 menu-item" *ngFor="let menu of menus">
+      <div class="d-flex align-items-center justify-content-between">
+        {{ menu.name }}
+        <fa-icon [icon]="chevronIcon" class="chevron-down" (click)="onChevronDown(content)"></fa-icon>
+      </div>
+      <div class="sub-content" #content>sub-content</div>
     </div>
   </div>
 </div>

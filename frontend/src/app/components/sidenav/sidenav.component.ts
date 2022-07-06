@@ -12,6 +12,8 @@ export class SidenavComponent implements OnInit {
   @Output() onCloseEvent = new EventEmitter<any>();
   chevronIcon = faAngleDown;
   closeIcon = faXmark;
+  isCollapsed = false;
+
   menus: Menu[] = [
     {
       name: 'Home',
@@ -55,5 +57,16 @@ export class SidenavComponent implements OnInit {
 
   onClose() {
     this.onCloseEvent.emit();
+  }
+
+  onChevronDown(subcontent: any) {
+    
+    if (subcontent.style.display === 'block') {
+      subcontent.style.display = 'none';
+      subcontent.style.height = '0px';
+    } else {
+      subcontent.style.display = 'block';
+      subcontent.style.minHeight = '100px';
+    }
   }
 }
