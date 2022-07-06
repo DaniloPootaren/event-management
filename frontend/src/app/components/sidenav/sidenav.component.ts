@@ -69,9 +69,4 @@ export class SidenavComponent implements OnInit {
     }
   }
 
-  onFocusOut(subcontent: any){
-    alert('out')
-    subcontent.style.display = 'none';
-    subcontent.style.height = '0px';
-  }
 }

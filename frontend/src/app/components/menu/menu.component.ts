@@ -15,16 +15,21 @@ export class MenuComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  openNav(sideNav: any, overlay:any) {
-    sideNav.style.width = '375px';
+  openNav(sideNav: any, overlay: any) {
+    const x = window.matchMedia('(max-width: 700px)');
+    if (x.matches) {
+      sideNav.style.width = '375px';
+    } else {
+      sideNav.style.width = '500px';
+    }
+
     overlay.style.display = 'block';
     this.main.style.backgroundColor = 'black';
   }
 
-  closeNav(sideNav: any, overlay:any) {
+  closeNav(sideNav: any, overlay: any) {
     sideNav.style.width = '0';
     this.main.style.marginLeft = '0';
     overlay.style.display = 'none';

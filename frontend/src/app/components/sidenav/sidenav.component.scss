@@ -10,13 +10,14 @@
   }
 
   h4 {
-    margin-top: 10px;
+    margin: 10px 0 3em 0;
     font-weight: 900;
     font-size: 26px;
   }
 
   .close-btn {
     font-size: 25px;
+    margin-bottom: 3em;
     color: $gray;
     cursor: pointer;
   }
@@ -49,6 +50,6 @@
 
 .footer {
   background-color: black;
-  height: 15em;
+  height: 100%;
 
 }
