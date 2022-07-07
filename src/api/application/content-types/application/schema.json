@@ -4,7 +4,8 @@
   "info": {
     "singularName": "application",
     "pluralName": "applications",
-    "displayName": "application"
+    "displayName": "application",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,7 +14,7 @@
   "attributes": {
     "navigation": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "page.menu"
     }
   }

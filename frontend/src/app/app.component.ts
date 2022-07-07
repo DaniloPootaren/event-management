@@ -5,6 +5,7 @@ import {
   AfterViewInit,
   HostListener,
 } from '@angular/core';
+import { WidgetService } from './services/widget.service';
 
 @Component({
   selector: 'app-root',
@@ -22,5 +23,9 @@ export class AppComponent implements OnInit {
   title = 'frontend';
   showAlternativeMenu = false;
 
-  ngOnInit(): void {}
+  constructor(private widgetService: WidgetService){}
+
+  ngOnInit(): void {
+    this.widgetService.initAppWidgets()
+  }
 }
