@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "speakers",
+  "info": {
+    "singularName": "speaker",
+    "pluralName": "speakers",
+    "displayName": "speaker"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "job_title": {
+      "type": "string",
+      "required": true
+    },
+    "working_at": {
+      "type": "string",
+      "required": true
+    },
+    "profile_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "social_networks": {
+      "type": "json",
+      "required": true
+    },
+    "event_detail": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event-detail.event-detail",
+      "inversedBy": "speakers"
+    }
+  }
+}

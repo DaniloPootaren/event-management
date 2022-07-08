@@ -15,7 +15,14 @@
     "today_event": {
       "type": "component",
       "repeatable": false,
-      "component": "page.today-s-event"
+      "component": "page.today-s-event",
+      "required": true
+    },
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.section",
+      "required": true
     }
   }
 }

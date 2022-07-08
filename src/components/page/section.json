@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_sections",
+  "info": {
+    "displayName": "section",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "icon1",
+        "icon2",
+        "icon3",
+        "icon4"
+      ]
+    },
+    "paragraph": {
+      "type": "richtext"
+    }
+  }
+}

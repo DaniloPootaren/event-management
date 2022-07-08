@@ -22,7 +22,8 @@
       "type": "enumeration",
       "enum": [
         "SHOWING",
-        "NOT SHOWING"
+        "UPCOMING",
+        "EXPIRED"
       ],
       "required": true
     },
@@ -52,6 +53,22 @@
     "network": {
       "type": "json",
       "required": true
+    },
+    "speakers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::speaker.speaker",
+      "mappedBy": "event_detail"
+    },
+    "gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
