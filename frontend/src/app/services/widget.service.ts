@@ -13,7 +13,7 @@ export class WidgetService {
 
   initAppWidgets() {
     this.http
-      .get<any>(`${this.baseUrl}/application?populate[navigation][populate]=*`)
+      .get<any>(`${this.baseUrl}/application?populate=deep`)
       .subscribe((res) => {
         this.navigator = res.data.attributes.navigation['menu_items'].data;
       });

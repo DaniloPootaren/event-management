@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { Menu } from '../types/menu';
@@ -10,47 +10,11 @@ import { Menu } from '../types/menu';
 })
 export class SidenavComponent implements OnInit {
   @Output() onCloseEvent = new EventEmitter<any>();
+  @Input() navigation: Menu[] | null = null;
   chevronIcon = faAngleDown;
   closeIcon = faXmark;
   isCollapsed = false;
 
-  menus: Menu[] = [
-    {
-      name: 'Home',
-      link: '/home',
-      subLinks: [{ name: 'Link 1', link: '/link1' }, { name: 'Link 2', link: '/link2' }],
-    },
-    {
-      name: 'Events',
-      link: '/events',
-      subLinks: [{ name: 'Link 1', link: '/link1' }],
-    },
-    {
-      name: 'Calendar',
-      link: '/calendar',
-      subLinks: [{ name: 'Link 1', link: '/link1' }],
-    },
-    {
-      name: 'Speakers',
-      link: '/calendar',
-      subLinks: [{ name: 'Link 1', link: '/link1' }],
-    },
-    {
-      name: 'Venues',
-      link: '/venues',
-      subLinks: [{ name: 'Link 1', link: '/link1' }],
-    },
-    {
-      name: 'Schedules',
-      link: '/schedules',
-      subLinks: [{ name: 'Link 1', link: '/link1' }],
-    },
-    {
-      name: 'Pages',
-      link: '/pages',
-      subLinks: [{ name: 'Link 1', link: '/link1' }],
-    },
-  ];
   constructor() {}
 
   ngOnInit(): void {}

@@ -5,72 +5,13 @@
   <div class="row h-100 mx-0">
     <div class="col-3 aligned brand"><h4>EVENTCHAMP</h4></div>
     <div class="col-9 aligned justify-content-end d-none d-lg-flex flex-wrap">
-      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
-        Home
+      <div class="menu-item" [ngClass]="alternative ? 'indigo':''" *ngFor="let nav of navigation">
+        {{nav.attributes.label}}
         <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
         <div class="menu-context-container">
-          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
+          <div class="content rounded shadow" *ngIf="nav.attributes.submenu.length" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
             <ul class="px-0">
-              <li>Event 1</li>
-              <li>Event 2</li>
-              <li>Event 3</li>
-              <li>Event 4</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
-        Events
-        <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
-        <div class="menu-context-container">
-          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
-            <ul class="px-0">
-              <li>Event 1</li>
-              <li>Event 2</li>
-              <li>Event 3</li>
-              <li>Event 4</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
-        Calendar
-        <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
-        <div class="menu-context-container">
-          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
-            <ul class="px-0">
-              <li>Event 1</li>
-              <li>Event 2</li>
-              <li>Event 3</li>
-              <li>Event 4</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
-        Speakers
-        <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
-        <div class="menu-context-container">
-          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
-            <ul class="px-0">
-              <li>Event 1</li>
-              <li>Event 2</li>
-              <li>Event 3</li>
-              <li>Event 4</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="menu-item" [ngClass]="alternative ? 'indigo':''">
-        Venues
-        <fa-icon [icon]="chevronIcon" class="menu-icon"></fa-icon>
-        <div class="menu-context-container">
-          <div class="content rounded shadow" [ngStyle]="{'border-top': alternative ? '3px solid #6610f2' : '3px solid #ffbb00'  }">
-            <ul class="px-0">
-              <li>Event 1</li>
-              <li>Event 2</li>
-              <li>Event 3</li>
-              <li>Event 4</li>
+              <li *ngFor="let sublink of nav.attributes.submenu">{{sublink.label}}</li>
             </ul>
           </div>
         </div>
@@ -88,6 +29,6 @@
   </div>
 </div>
 <div id="mySidenav" class="sidenav" #sideNav>
-  <sidenav (onCloseEvent)="closeNav(sideNav,overlay)"></sidenav>
+  <sidenav (onCloseEvent)="closeNav(sideNav,overlay)" [navigation]="navigation"></sidenav>
 </div>
 <div id="overlay" #overlay (click)="closeNav(sideNav,overlay)"></div>

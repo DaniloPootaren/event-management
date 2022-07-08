@@ -1,6 +1,8 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faCreditCard } from '@fortawesome/free-regular-svg-icons';
+import { WidgetService } from 'src/app/services/widget.service';
+import { Menu } from '../types/menu';
 
 @Component({
   selector: 'menu',
@@ -12,10 +14,15 @@ export class MenuComponent implements OnInit {
   @Input() main: any = null;
   chevronIcon = faAngleDown;
   shoppingCartIcon = faCreditCard;
+  
+  get navigation() : Menu[] | null {
+    return this.widgetService.navigator
+  }
 
-  constructor() {}
+  constructor(private widgetService: WidgetService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   openNav(sideNav: any, overlay: any) {
     const x = window.matchMedia('(max-width: 700px)');

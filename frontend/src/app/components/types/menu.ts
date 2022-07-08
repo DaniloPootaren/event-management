@@ -1,11 +1,13 @@
 interface MenuLink {
-    name: string,
-    link: string,
+  label: string;
+  link: string;
 }
 
 export interface Menu {
-    name: string,
-    link: string,
-    subLinks: MenuLink[],
+  attributes: {
+    createdAt: string;
+    label: string;
+    link: string;
+    submenu: MenuLink[];
+  };
 }
-
