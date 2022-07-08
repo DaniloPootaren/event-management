@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_widget_menu_links",
+  "info": {
+    "displayName": "menu_link",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

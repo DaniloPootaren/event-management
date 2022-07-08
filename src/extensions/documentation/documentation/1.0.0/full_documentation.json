@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-08T11:19:26.414Z"
+    "x-generation-date": "2022-07-08T11:31:17.373Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -160,7 +160,23 @@
                                       "link": {
                                         "type": "string"
                                       },
-                                      "submenu": {},
+                                      "submenu": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "string"
+                                            },
+                                            "label": {
+                                              "type": "string"
+                                            },
+                                            "link": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -577,7 +593,23 @@
                                     "link": {
                                       "type": "string"
                                     },
-                                    "submenu": {},
+                                    "submenu": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "string"
+                                          },
+                                          "label": {
+                                            "type": "string"
+                                          },
+                                          "link": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -18434,9 +18466,7 @@
         ],
         "properties": {
           "data": {
-            "required": [
-              "submenu"
-            ],
+            "required": [],
             "type": "object",
             "properties": {
               "label": {
@@ -18445,7 +18475,20 @@
               "link": {
                 "type": "string"
               },
-              "submenu": {}
+              "submenu": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -18470,7 +18513,23 @@
                     "link": {
                       "type": "string"
                     },
-                    "submenu": {},
+                    "submenu": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "link": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -18812,7 +18871,23 @@
                   "link": {
                     "type": "string"
                   },
-                  "submenu": {},
+                  "submenu": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
                   "createdAt": {
                     "type": "string",
                     "format": "date-time"

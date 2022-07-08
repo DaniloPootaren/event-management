@@ -19,8 +19,9 @@
       "type": "string"
     },
     "submenu": {
-      "type": "json",
-      "required": true
+      "type": "component",
+      "repeatable": true,
+      "component": "widget.menu-link"
     }
   }
 }
