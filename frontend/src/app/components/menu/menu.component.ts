@@ -2,7 +2,7 @@ import { Component, Inject, Input, OnInit } from '@angular/core';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faCreditCard } from '@fortawesome/free-regular-svg-icons';
 import { WidgetService } from 'src/app/services/widget.service';
-import { Menu } from '../types/menu';
+import { Menu } from '../../types/menu';
 
 @Component({
   selector: 'menu',

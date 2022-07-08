@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { Menu } from '../types/menu';
+import { Menu } from '../../types/menu';
 
 @Component({
   selector: 'sidenav',

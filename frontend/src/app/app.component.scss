@@ -6,6 +6,7 @@
     .menu {
       height:  8vh;
       position: fixed;
+      z-index: 30000;
 
       @media only screen and (min-width: 992px) {
         height: 12vh;
@@ -14,8 +15,7 @@
 
 
     .body {
-        margin-top: 8vh;
-        height: 120vh;        
+        height: 100vh;        
     }
 }
 
