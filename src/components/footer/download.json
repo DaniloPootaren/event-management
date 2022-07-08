@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_footer_downloads",
+  "info": {
+    "displayName": "download",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "our apps"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_footer_clickables",
+  "info": {
+    "displayName": "clickable",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "icon1",
+        "icon2",
+        "icon3"
+      ],
+      "default": "icon1",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

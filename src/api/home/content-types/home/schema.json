@@ -23,6 +23,12 @@
       "repeatable": true,
       "component": "page.section",
       "required": true
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.contact",
+      "required": true
     }
   }
 }

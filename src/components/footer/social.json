@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_footer_socials",
+  "info": {
+    "displayName": "social",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "icon1",
+        "icon2",
+        "icon3"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

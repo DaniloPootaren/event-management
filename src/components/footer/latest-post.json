@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_latest_posts",
+  "info": {
+    "displayName": "latest_posts",
+    "icon": "arrow-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
+    }
+  }
+}
