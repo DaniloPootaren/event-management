@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_page_today_s_events",
+  "info": {
+    "displayName": "today's_event",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    }
+  }
+}

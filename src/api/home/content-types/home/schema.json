@@ -11,5 +11,11 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "today_event": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.today-s-event"
+    }
+  }
 }

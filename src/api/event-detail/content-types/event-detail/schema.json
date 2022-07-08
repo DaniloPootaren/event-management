@@ -8,24 +8,50 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "location": {
-      "type": "string"
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event",
+      "mappedBy": "event_detail"
     },
-    "organizers": {
+    "status": {
       "type": "enumeration",
       "enum": [
-        "Mauritius event organization",
-        "Caudan event organization ",
-        "Lux Hotel",
-        "Mari Deal "
-      ]
+        "SHOWING",
+        "NOT SHOWING"
+      ],
+      "required": true
     },
-    "article": {
-      "type": "richtext"
+    "price": {
+      "type": "decimal"
+    },
+    "organizer": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "phonenumber": {
+      "type": "integer",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "fax": {
+      "type": "string",
+      "required": true
+    },
+    "network": {
+      "type": "json",
+      "required": true
     }
   }
 }
