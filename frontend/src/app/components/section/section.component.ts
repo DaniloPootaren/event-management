@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, AfterViewChecked } from '@angular/core';
 import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 import { Section } from 'src/app/types/section';
 
@@ -10,7 +10,12 @@ import { Section } from 'src/app/types/section';
 export class SectionComponent implements OnInit {
   @Input() section: Section | null = null;
   icon = faCalendar;
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+   
+  }
+
+  
 }

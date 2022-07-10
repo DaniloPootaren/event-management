@@ -1,13 +1,18 @@
-<section class="text-center p-5 ">
-    <div class="title-wrapper">
-        <h1 class="lead">{{section?.title?.text}}&nbsp;<span class="highlighted">{{section?.title?.highlighted_text}}</span></h1>
-        <div class="line"></div>
-        <div class="icon-container">
-            <fa-icon [icon]="icon" class="icon" ></fa-icon>
-        </div>
+<section class="text-center p-5">
+  <div class="title-wrapper">
+    <h1 class="lead">
+      {{ section?.title?.text }}&nbsp;<span class="highlighted">{{
+        section?.title?.highlighted_text
+      }}</span>
+    </h1>
+    <div class="line"></div>
+    <div class="icon-container">
+      <fa-icon [icon]="icon" class="icon"></fa-icon>
     </div>
-    <p class="lead small">{{section?.paragraph}}</p>
+  </div>
+  <textarea autosize class="text-area lead small"  readonly="true" 
+    >{{ section?.paragraph }}
+    </textarea
+  >
+  <!-- <p class="lead small">{{| unescape}}</p> -->
 </section>
-
-
-  

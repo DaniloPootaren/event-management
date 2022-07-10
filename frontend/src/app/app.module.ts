@@ -16,6 +16,8 @@ import { BtnComponent } from './components/btn/btn.component';
 import { SearchComponent } from './components/search/search.component';
 import { InputComponent } from './components/input/input.component';
 import { SectionComponent } from './components/section/section.component';
+import { UnescapePipe } from './pipes/unescape.pipe';
+import { AutosizeModule } from 'ngx-autosize';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,15 @@ import { SectionComponent } from './components/section/section.component';
     SearchComponent,
     InputComponent,
     SectionComponent,
+    UnescapePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    AutosizeModule
   ],
   providers: [WidgetService],
   bootstrap: [AppComponent]

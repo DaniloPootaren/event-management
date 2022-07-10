@@ -37,4 +37,17 @@ section {
   .small {
         font-size: 17px;
 }
+
+.text-area {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+
+    @media only screen and (min-width: 992px) {
+        font-size: 20px;
+        min-width: none;
+        padding: 0 10em;
+      }
+}
 }
