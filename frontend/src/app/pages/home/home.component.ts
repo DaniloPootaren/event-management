@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     private homepageService: HomepageService,
     private config: NgbCarouselConfig
   ) {
-    config.showNavigationArrows = true;
+    config.showNavigationArrows = false;
     config.showNavigationIndicators = true;
   }
 
