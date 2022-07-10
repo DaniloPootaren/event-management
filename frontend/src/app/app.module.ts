@@ -13,6 +13,8 @@ import { WidgetService } from './services/widget.service';
 import { HomeComponent } from './pages/home/home.component';
 import { TodayEventComponent } from './components/today-event/today-event.component';
 import { BtnComponent } from './components/btn/btn.component';
+import { SearchComponent } from './components/search/search.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { BtnComponent } from './components/btn/btn.component';
     HomeComponent,
     TodayEventComponent,
     BtnComponent,
+    SearchComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
