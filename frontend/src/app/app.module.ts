@@ -18,6 +18,7 @@ import { InputComponent } from './components/input/input.component';
 import { SectionComponent } from './components/section/section.component';
 import { UnescapePipe } from './pipes/unescape.pipe';
 import { AutosizeModule } from 'ngx-autosize';
+import { ViewCategoryComponent } from './components/view-category/view-category.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AutosizeModule } from 'ngx-autosize';
     InputComponent,
     SectionComponent,
     UnescapePipe,
+    ViewCategoryComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+@import '../../../common/styles/colors.scss';
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .category-btn {
+        width: unset !important;
+        height: 4em;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: bold;
+      
+      }
+}
+
