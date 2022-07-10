@@ -11,6 +11,7 @@ import { ToggleButtonsComponent } from './components/toggle-buttons/toggle-butto
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { WidgetService } from './services/widget.service';
 import { HomeComponent } from './pages/home/home.component';
+import { TodayEventComponent } from './components/today-event/today-event.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
     ToggleButtonsComponent,
     SidenavComponent,
     HomeComponent,
+    TodayEventComponent,
   ],
   imports: [
     BrowserModule,
