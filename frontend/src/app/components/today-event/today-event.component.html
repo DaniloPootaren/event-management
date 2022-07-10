@@ -27,15 +27,15 @@
           <div class="location">
             <div class="text-wrapper">
               <fa-icon [icon]="calendarIcon" class="icon"></fa-icon>
-              <div class="small">16/09/1994</div>
+              <div class="small">{{ event.attributes.start_date | date: 'dd/MM/yyyy'}}</div>
             </div>
             <div class="text-wrapper">
               <fa-icon [icon]="addressIcon" class="icon"></fa-icon>
               <div class="small">Beau bassin</div>
             </div>
-            <div class="text-wrapper">
+            <div class="text-wrapper" *ngIf="event.attributes.event_detail?.data">
               <fa-icon [icon]="mapIcon" class="icon"></fa-icon>
-              <div class="small">70 morc la confiance bbassin</div>
+              <div class="small">{{event.attributes.event_detail?.data?.attributes?.address}}</div>
             </div>
           </div>
         </div>

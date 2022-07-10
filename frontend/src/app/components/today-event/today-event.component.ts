@@ -16,6 +16,8 @@ export class TodayEventComponent implements OnInit {
   calendarIcon = faCalendar;
   addressIcon = faAddressBook;
   mapIcon = faMap;
+
+  
   constructor(private config: NgbCarouselConfig) {
     config.showNavigationArrows = false;
     config.showNavigationIndicators = true;
