@@ -1,19 +1,26 @@
-<ngb-carousel
-  *ngIf="todayEvent"
-  [showNavigationArrows]="false"
-  [showNavigationIndicators]="false"
->
-  <ng-template ngbSlide *ngFor="let image of todayEvent">
-    <div class="picsum-img-wrapper">
-      <img
+<div class="banner-container">
+  <ngb-carousel
+    *ngIf="todayEvent"
+    [showNavigationArrows]="false"
+    [showNavigationIndicators]="true"
+  >
+    <ng-template ngbSlide *ngFor="let image of todayEvent">
+      <div class="picsum-img-wrapper">
+        <img
+          class="banner-image"
+          [src]="image.attributes.banner.data.attributes.formats.large.url"
+          alt="slider"
+        />
+        <!-- <img
         class="banner-image"
-        [src]="image.attributes.banner.data.attributes.formats.large.url"
+        [src]="'https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?w=1800&t=st=1657432887~exp=1657433487~hmac=c16c9cea1d6bbce4347585b90ddb0df1d7b6f7a6cda46d2eee545ce2e54f6c65'"
         alt="slider"
-      /> 
-    </div>
-    <div class="carousel-caption">
-      <h3>No mouse navigation</h3>
-      <p>This carousel hides navigation arrows and indicators.</p>
-    </div>
-  </ng-template>
-</ngb-carousel>
+      /> -->
+      <div class="banner-content">
+        <h3>No mouse navigation</h3>
+        <p>This carousel hides navigation arrows and indicators.</p>
+      </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
