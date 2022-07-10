@@ -1,0 +1,36 @@
+@import "../../../common/styles/colors.scss";
+
+section {
+  min-height: 40vh;
+  .title-wrapper {
+    h1 {
+      font-size: 45px;
+      margin-bottom: 1em;
+
+      .highlighted {
+        color: $yellow;
+        font-weight: 500;
+      }
+    }
+
+    .line {
+      border: 0.2px solid $light-gray;
+      width: 20em;
+      margin:auto;
+    }
+
+    .icon-container {
+        height: 4em;
+        width: 4em;
+        background-color: $white;
+        color: $light-gray;
+        margin:-1em auto;
+        font-size: 20px;
+    }
+
+  }
+
+  .small {
+        font-size: 17px;
+}
+}

@@ -15,6 +15,7 @@ import { TodayEventComponent } from './components/today-event/today-event.compon
 import { BtnComponent } from './components/btn/btn.component';
 import { SearchComponent } from './components/search/search.component';
 import { InputComponent } from './components/input/input.component';
+import { SectionComponent } from './components/section/section.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { InputComponent } from './components/input/input.component';
     BtnComponent,
     SearchComponent,
     InputComponent,
+    SectionComponent,
   ],
   imports: [
     BrowserModule,
