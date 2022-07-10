@@ -4,22 +4,41 @@
     [showNavigationArrows]="false"
     [showNavigationIndicators]="true"
   >
-    <ng-template ngbSlide *ngFor="let image of todayEvent">
+    <ng-template ngbSlide *ngFor="let event of todayEvent">
       <div class="picsum-img-wrapper">
+        <!-- <img
+          class="banner-image"
+          [src]="event.attributes.banner.data.attributes.formats.large.url"
+          alt="slider"
+        /> -->
         <img
           class="banner-image"
-          [src]="image.attributes.banner.data.attributes.formats.large.url"
+          [src]="
+            'https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?w=1800&t=st=1657432887~exp=1657433487~hmac=c16c9cea1d6bbce4347585b90ddb0df1d7b6f7a6cda46d2eee545ce2e54f6c65'
+          "
           alt="slider"
         />
-        <!-- <img
-        class="banner-image"
-        [src]="'https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?w=1800&t=st=1657432887~exp=1657433487~hmac=c16c9cea1d6bbce4347585b90ddb0df1d7b6f7a6cda46d2eee545ce2e54f6c65'"
-        alt="slider"
-      /> -->
-      <div class="banner-content">
-        <h3>No mouse navigation</h3>
-        <p>This carousel hides navigation arrows and indicators.</p>
-      </div>
+        <div class="banner-content text-center">
+          <app-btn
+            class=""
+            [label]="event.attributes.category.data.attributes.name"
+          ></app-btn>
+          <h3 class="display-4">{{ event.attributes.name }}</h3>
+          <div class="location">
+            <div class="text-wrapper">
+              <fa-icon [icon]="calendarIcon" class="icon"></fa-icon>
+              <div class="small">16/09/1994</div>
+            </div>
+            <div class="text-wrapper">
+              <fa-icon [icon]="addressIcon" class="icon"></fa-icon>
+              <div class="small">Beau bassin</div>
+            </div>
+            <div class="text-wrapper">
+              <fa-icon [icon]="mapIcon" class="icon"></fa-icon>
+              <div class="small">70 morc la confiance bbassin</div>
+            </div>
+          </div>
+        </div>
       </div>
     </ng-template>
   </ngb-carousel>

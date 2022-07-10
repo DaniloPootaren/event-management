@@ -12,6 +12,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { WidgetService } from './services/widget.service';
 import { HomeComponent } from './pages/home/home.component';
 import { TodayEventComponent } from './components/today-event/today-event.component';
+import { BtnComponent } from './components/btn/btn.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TodayEventComponent } from './components/today-event/today-event.compon
     SidenavComponent,
     HomeComponent,
     TodayEventComponent,
+    BtnComponent,
   ],
   imports: [
     BrowserModule,
