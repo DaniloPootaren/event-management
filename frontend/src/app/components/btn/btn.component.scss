@@ -1,6 +1,10 @@
-@import '../../../common/styles/colors.scss';
+@import "../../../common/styles/colors.scss";
 
 .custom-btn {
- min-width: 8em;
- background-color: $yellow;
+  min-width: 8em;
+  background-color: $yellow;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

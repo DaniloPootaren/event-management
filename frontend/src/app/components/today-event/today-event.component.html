@@ -27,16 +27,35 @@
           <div class="location">
             <div class="text-wrapper">
               <fa-icon [icon]="calendarIcon" class="icon"></fa-icon>
-              <div class="small">{{ event.attributes.start_date | date: 'dd/MM/yyyy'}}</div>
+              <div class="small">
+                {{ event.attributes.start_date | date: "dd/MM/yyyy" }}
+              </div>
             </div>
             <div class="text-wrapper">
               <fa-icon [icon]="addressIcon" class="icon"></fa-icon>
-              <div class="small">{{event.attributes.region}}</div>
+              <div class="small">{{ event.attributes.region }}</div>
             </div>
-            <div class="text-wrapper" *ngIf="event.attributes.event_detail?.data">
+            <div
+              class="text-wrapper"
+              *ngIf="event.attributes.event_detail?.data"
+            >
               <fa-icon [icon]="mapIcon" class="icon"></fa-icon>
-              <div class="small">{{event.attributes.event_detail?.data?.attributes?.address}}</div>
+              <div class="small">
+                {{ event.attributes.event_detail?.data?.attributes?.address }}
+              </div>
             </div>
+          </div>
+          <div class="action-container">
+            <button
+              class="btn btn-outline-light text-white btn-lg rounded-pill banner-btn"
+            >
+              details
+            </button>
+            <button
+              class="btn btn-outline-light text-white btn-lg rounded-pill banner-btn"
+            >
+              buy ticket
+            </button>
           </div>
         </div>
       </div>
