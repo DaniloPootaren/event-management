@@ -35,10 +35,6 @@
         "audios"
       ]
     },
-    "location": {
-      "type": "json",
-      "required": true
-    },
     "event_detail": {
       "type": "relation",
       "relation": "oneToOne",
@@ -53,6 +49,22 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "events"
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "Flacq",
+        "Grand Port",
+        "Moka",
+        "Pamplemousses",
+        "Plaines Wilhems",
+        "Port Louis",
+        "Rivière du Rempart\t",
+        "Rivière Noire\t",
+        "Savanne"
+      ],
+      "default": "Plaines Wilhems",
+      "required": true
     }
   }
 }
