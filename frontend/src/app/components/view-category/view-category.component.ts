@@ -18,4 +18,8 @@ export class ViewCategoryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleCategoryClick(category: string){
+    console.log(category)
+  }
+
 }
