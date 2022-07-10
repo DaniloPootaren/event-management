@@ -2,13 +2,11 @@
   "collectionName": "components_page_sections",
   "info": {
     "displayName": "section",
-    "icon": "archway"
+    "icon": "archway",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
     "icon": {
       "type": "enumeration",
       "enum": [
@@ -20,6 +18,12 @@
     },
     "paragraph": {
       "type": "richtext"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "widget.highlighted-text",
+      "required": true
     }
   }
 }

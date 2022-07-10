@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-10T11:57:23.448Z"
+    "x-generation-date": "2022-07-10T12:40:13.806Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -13722,7 +13722,7 @@
           "data": {
             "required": [
               "today_event",
-              "section",
+              "first_section",
               "footer"
             ],
             "type": "object",
@@ -13746,25 +13746,30 @@
                   }
                 }
               },
-              "section": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "Title": {
-                      "type": "string"
-                    },
-                    "icon": {
-                      "type": "string",
-                      "enum": [
-                        "icon1",
-                        "icon2",
-                        "icon3",
-                        "icon4"
-                      ]
-                    },
-                    "paragraph": {
-                      "type": "string"
+              "first_section": {
+                "type": "object",
+                "properties": {
+                  "icon": {
+                    "type": "string",
+                    "enum": [
+                      "icon1",
+                      "icon2",
+                      "icon3",
+                      "icon4"
+                    ]
+                  },
+                  "paragraph": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "object",
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "highlighted_text": {
+                        "type": "string"
+                      }
                     }
                   }
                 }
@@ -15612,28 +15617,36 @@
                         }
                       }
                     },
-                    "section": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "icon": {
-                            "type": "string",
-                            "enum": [
-                              "icon1",
-                              "icon2",
-                              "icon3",
-                              "icon4"
-                            ]
-                          },
-                          "paragraph": {
-                            "type": "string"
+                    "first_section": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string",
+                          "enum": [
+                            "icon1",
+                            "icon2",
+                            "icon3",
+                            "icon4"
+                          ]
+                        },
+                        "paragraph": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            },
+                            "highlighted_text": {
+                              "type": "string"
+                            }
                           }
                         }
                       }
@@ -17996,28 +18009,36 @@
                       }
                     }
                   },
-                  "section": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "Title": {
-                          "type": "string"
-                        },
-                        "icon": {
-                          "type": "string",
-                          "enum": [
-                            "icon1",
-                            "icon2",
-                            "icon3",
-                            "icon4"
-                          ]
-                        },
-                        "paragraph": {
-                          "type": "string"
+                  "first_section": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "icon": {
+                        "type": "string",
+                        "enum": [
+                          "icon1",
+                          "icon2",
+                          "icon3",
+                          "icon4"
+                        ]
+                      },
+                      "paragraph": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "text": {
+                            "type": "string"
+                          },
+                          "highlighted_text": {
+                            "type": "string"
+                          }
                         }
                       }
                     }

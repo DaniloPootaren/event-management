@@ -1,4 +1,5 @@
 import { Event } from './event';
+import { Section } from './section';
 
 export type HomePage = {
   data: {
@@ -6,7 +7,7 @@ export type HomePage = {
       createdAt: string;
       footer: any;
       publishedAt: string;
-      section: any;
+      first_section: Section;
       today_event: {
         events: {
           data: Event[];

@@ -4,12 +4,16 @@ section {
   min-height: 40vh;
   .title-wrapper {
     h1 {
-      font-size: 45px;
+      font-size: 37px;
       margin-bottom: 1em;
 
       .highlighted {
         color: $yellow;
         font-weight: 500;
+      }
+
+      @media only screen and (min-width: 992px) {
+        font-size: 45px;
       }
     }
 

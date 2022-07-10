@@ -18,9 +18,9 @@
       "component": "page.today-s-event",
       "required": true
     },
-    "section": {
+    "first_section": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "page.section",
       "required": true
     },

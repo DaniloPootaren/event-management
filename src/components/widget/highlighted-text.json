@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_widget_highlighted_texts",
+  "info": {
+    "displayName": "highlighted-text",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "highlighted_text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
