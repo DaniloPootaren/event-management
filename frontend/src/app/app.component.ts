@@ -5,6 +5,7 @@ import {
   AfterViewInit,
   HostListener,
 } from '@angular/core';
+import { LoadingService } from './services/loading.service';
 import { WidgetService } from './services/widget.service';
 
 @Component({
@@ -23,7 +24,11 @@ export class AppComponent implements OnInit {
   title = 'frontend';
   showAlternativeMenu = false;
 
-  constructor(private widgetService: WidgetService){}
+  get loading() {
+    return this.loadingService.isLoading
+  }
+
+  constructor(private widgetService: WidgetService, private loadingService: LoadingService){}
 
   ngOnInit(): void {
     this.widgetService.initAppWidgets()
