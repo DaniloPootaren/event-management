@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CategoryService } from 'src/app/services/category.service';
 import { WidgetService } from 'src/app/services/widget.service';
 import { Category } from 'src/app/types/category';
 
@@ -13,13 +14,15 @@ export class ViewCategoryComponent implements OnInit {
     return this.widgetService.categories
   }
 
-  constructor(  private widgetService: WidgetService) { }
+  constructor(  private widgetService: WidgetService, private categoryService: CategoryService) { }
 
   ngOnInit(): void {
   }
 
   handleCategoryClick(category: string){
-    console.log(category)
+    this.categoryService.fetchEventByCategory(category).subscribe(
+      res => console.log(res)
+    )
   }
 
 }
