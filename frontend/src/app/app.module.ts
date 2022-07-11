@@ -19,6 +19,7 @@ import { SectionComponent } from './components/section/section.component';
 import { UnescapePipe } from './pipes/unescape.pipe';
 import { AutosizeModule } from 'ngx-autosize';
 import { ViewCategoryComponent } from './components/view-category/view-category.component';
+import { SpinnnerComponent } from './components/spinnner/spinnner.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ViewCategoryComponent } from './components/view-category/view-category.
     SectionComponent,
     UnescapePipe,
     ViewCategoryComponent,
+    SpinnnerComponent,
   ],
   imports: [
     BrowserModule,
