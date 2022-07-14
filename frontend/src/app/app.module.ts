@@ -21,6 +21,7 @@ import { AutosizeModule } from 'ngx-autosize';
 import { ViewCategoryComponent } from './components/view-category/view-category.component';
 import { SpinnnerComponent } from './components/spinnner/spinnner.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { EventCardComponent } from './components/event-card/event-card.component
     ViewCategoryComponent,
     SpinnnerComponent,
     EventCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
