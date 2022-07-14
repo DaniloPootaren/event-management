@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "event": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::event.event",
-      "mappedBy": "event_detail"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
@@ -61,14 +55,21 @@
       "mappedBy": "event_detail"
     },
     "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event",
+      "inversedBy": "event_detail"
     }
   }
 }

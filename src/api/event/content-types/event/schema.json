@@ -35,12 +35,6 @@
         "audios"
       ]
     },
-    "event_detail": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::event-detail.event-detail",
-      "inversedBy": "event"
-    },
     "end_date": {
       "type": "datetime"
     },
@@ -65,6 +59,12 @@
       ],
       "default": "Plaines Wilhems",
       "required": true
+    },
+    "event_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-detail.event-detail",
+      "inversedBy": "event"
     }
   }
 }

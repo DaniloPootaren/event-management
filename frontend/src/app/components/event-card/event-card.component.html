@@ -1,0 +1,47 @@
+<div class="container-fluid wrapper rounded p-0 my-2">
+  <div class="row g-2">
+    <div class="col-12">
+      <img
+        class="rounded"
+        [src]="
+          baseUrl +
+          event?.attributes?.banner?.data?.attributes?.formats?.medium?.url
+        "
+        alt="image not found"
+      />
+      <div class="col-12 event-footer">
+        <h5>{{ event?.attributes?.name }}</h5>
+        <div class="footer-content">
+          <app-btn
+            class="category-btn"
+            [label]="event?.attributes?.category?.data?.attributes?.name"
+          ></app-btn>
+          <div class="text-content">
+            <div class="text-wrapper">
+              <fa-icon [icon]="calendarIcon" class="icon"></fa-icon>
+              <div class="small">
+                {{ event?.attributes?.start_date | date: "dd/MM/yyyy" }}
+              </div>
+            </div>
+            <div class="text-wrapper">
+              <fa-icon [icon]="addressIcon" class="icon"></fa-icon>
+              <div class="small">{{ event?.attributes?.region }}</div>
+            </div>
+            <div
+              class="text-wrapper"
+              *ngIf="event?.attributes?.event_detail?.data"
+            >
+              <fa-icon [icon]="mapIcon" class="icon"></fa-icon>
+              <div class="small">
+                {{ event?.attributes?.event_detail?.data?.attributes?.address }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="description-container small">
+          {{ event?.attributes?.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+@import "../../../common/styles/colors.scss";
+
+.wrapper {
+  height: 25em;
+  max-width: 404px;
+
+  img {
+    max-height: 247px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .event-footer {
+    height: calc(20em - 247px);
+    padding-top: 1em;
+
+    .footer-content {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .category-btn {
+        width: unset !important;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: bold;
+      }
+
+      .text-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @media only screen and (min-width: 992px) {
+          justify-content: center;
+        }
+        .text-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #777777;
+          text-transform: uppercase;
+          font-size: small;
+          font-weight: 300;
+
+          .icon {
+            margin: 0 15px 0 20px;
+            color: $yellow;
+          }
+        }
+      }
+    }
+
+    .description-container {
+      display: flex;
+      height: 3em;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+      margin-top: 1em;
+      color: #777777;
+      font-size: small;
+      font-weight: 300;
+    }
+  }
+}

@@ -20,6 +20,7 @@ import { UnescapePipe } from './pipes/unescape.pipe';
 import { AutosizeModule } from 'ngx-autosize';
 import { ViewCategoryComponent } from './components/view-category/view-category.component';
 import { SpinnnerComponent } from './components/spinnner/spinnner.component';
+import { EventCardComponent } from './components/event-card/event-card.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { SpinnnerComponent } from './components/spinnner/spinnner.component';
     UnescapePipe,
     ViewCategoryComponent,
     SpinnnerComponent,
+    EventCardComponent,
   ],
   imports: [
     BrowserModule,

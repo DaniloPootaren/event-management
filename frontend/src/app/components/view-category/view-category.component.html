@@ -12,3 +12,10 @@
     (newItemEvent)="handleCategoryClick($event)"
   ></app-btn>
 </div>
+<div class="container events-container">
+  <div class="row">
+    <div class="col-md-6 col-lg-4" *ngFor="let event of events">
+      <event-card [event]="event"></event-card>
+    </div>
+  </div>
+</div>

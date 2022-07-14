@@ -40,7 +40,7 @@ export class ViewCategoryComponent implements OnInit {
     this.categoryService
       .fetchEventByCategory(category)
       .subscribe((res) => {
-        console.log(res)
+        this.events = res.data;
         this.loadingService.isLoading = false;
       });
   }

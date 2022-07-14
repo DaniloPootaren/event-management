@@ -13,7 +13,7 @@ export class CategoryService {
   constructor(private http: HttpClient) { }
 
   fetchEventByCategory(category: string): Observable<any>{
-  return this.http.get(`${this.baseUrl}/events?filters[category][name][$eq]=${category}`)
+  return this.http.get(`${this.baseUrl}/events?populate=deep&filters[category][name][$eq]=${category}`)
   }
 
   fetchAllEvents(){

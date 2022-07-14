@@ -8,6 +8,7 @@ export type Event = {
     createdAt: string;
     description: string;
     end_date: string;
+    category: any;
     event_detail: {
         data: EventDetail
     };
@@ -16,5 +17,6 @@ export type Event = {
     publishedAt: string;
     start_date: string;
     updatedAt: string;
+    region: any;
   };
 };
